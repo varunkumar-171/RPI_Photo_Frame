@@ -6,7 +6,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-SERVICE_NAME="dashboard"
+SERVICE_NAME="photo_frame"
 SERVICE_FILE="/etc/systemd/system/$SERVICE_NAME.service"
 
 # Stop and disable the service

@@ -54,7 +54,7 @@ display = ili9341.ILI9341(spi, rotation=ROTATION, cs=cs_pin, dc=dc_pin, rst=rese
 # Image folder
 image_width = 240
 image_height = 320
-folder = "../images"
+folder = "images"
 
 if ROTATION % 180 == 90:
     image_height, image_width = image_width, image_height  # we swap height/width to rotate it to landscape!

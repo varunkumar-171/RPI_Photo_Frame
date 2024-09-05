@@ -12,7 +12,7 @@ echo "dirname : [$(dirname "$0")]"
 echo "pwd     : [$(pwd)]"
 
 DIRNAME="$(dirname "$0")"
-APPLICATION="rgb_photo_frame.py"
+APPLICATION="app/rgb_photo_frame.py"
 
 cd $DIRNAME
 
@@ -31,13 +31,13 @@ fi
 sudo apt-get -y install python3-venv python3-pip
 
 # Create a virtual environment if it does not exist
-if [ ! -d "venv" ]; then
+if [ ! -d "pyenv" ]; then
     echo "Creating virtual environment..."
-    python3 -m venv pyvenv
+    python3 -m venv pyenv
 fi
 
 # Activate the virtual environment
-source pyvenv/bin/activate
+source pyenv/bin/activate
 
 # Install the required packages
 echo "Installing required packages..."
